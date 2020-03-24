@@ -1,10 +1,51 @@
-.qc-home {
-
+.cq-main-container {
+  width: 95%;
+  height: 90%;
+  display: grid;
+}
+.cq-home {
+  height: 50%;
+  margin-top: 10%;
+  align-self: center;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+}
+.cq-title-container {
+}
+.cq-form {
+  width: 50%;
+  height: 50%;
+  justify-self: center;
+  display: grid;
+  justify-items: center;
+}
+.cq-username {
+  width: 90%;
+  background-color: #119DA4;
+  color: #FDFFFF;
+  border: none;
+  text-align: center;
+}
+.cq-username::placeholder {
+  color: #FDFFFF;
 }
 .cq-start-button {
+  width: 90%;
+  height: 80%;
+  margin-top: 5%;
   background-color: #B10F2E;
-  border: none;
   color: #FDFFFF;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: width height border-radius 1.5s;
+}
+.cq-start-button:hover {
+  width: 95%;
+  height: 85%;
+  border-radius: 5px;
 }
 .invisible {
   display: none;
