@@ -34,12 +34,12 @@ export default function Quiz(props) {
     }
   }
   return (
-    <div>
+    <div className={styles['cq-quiz-container']}>
       <LeaderBoard username={props.username} score={currentScore} quizStatus={quizStatus}/>
-      <div className={quizStatus == "running" ? styles['rc-quiz-container'] : styles['invisible']}>
+      <div className={quizStatus == "running" ? styles['cq-quiz-container'] : styles['invisible']}>
         <h1>Vraag {count}</h1>
         <Question isQuestionSelected = {isQuestionSelected} updateScore = {updateScore} count={count}/>
-        <div className={visible ? styles['cq-nextbutton'] : styles['invisible']} onClick={() => {handleQuestion(0, addedScore, count)}}>{count < 10 ? "Volgende vraag" : "Done!"}</div>
+        <div className={visible ? styles['cq-nextbutton'] : styles['invisible']} onClick={() => {handleQuestion(0, addedScore, count)}}>{count < 10 ? <p>Volgende vraag</p> : <p>"Done!"</p>}</div>
       </div>
     </div>
   );

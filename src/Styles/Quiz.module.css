@@ -1,6 +1,34 @@
-.cq-nextbutton {
-}
 
+.cq-quiz-container {
+  height: 90%;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.cq-nextbutton {
+  width: 130px;
+  height: 45px;
+  margin: auto;
+  display: grid;
+  margin-top: 5%;
+  background-color: #B10F2E;
+  color: #FDFFFF;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: width 0.8s, height 0.8s
+}
+.cq-nextbutton p {
+  align-self: center;
+  margin: 0;
+}
+.cq-nextbutton:hover {
+  width: 140px;
+  height: 55px;
+}
 .invisible {
   display: none;
 }

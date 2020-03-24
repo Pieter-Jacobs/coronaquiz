@@ -2,6 +2,7 @@
   width: 95%;
   height: 90%;
   display: grid;
+  cursor: auto;
 }
 .cq-home {
   height: 50%;
@@ -40,7 +41,7 @@
   border: none;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: width height border-radius 1.5s;
+  transition: width 0.8s, height 0.8s, border-radius 0.8s;
 }
 .cq-start-button:hover {
   width: 95%;

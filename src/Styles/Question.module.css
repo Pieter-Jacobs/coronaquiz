@@ -1,0 +1,32 @@
+.cq-mc-container{
+  display: grid;
+  grid-auto-rows: repeat(3,1fr);
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.cq-mc-container li {
+  display: grid;
+  grid-template-columns: 5% 95%;
+  border-radius: 5px;
+  background-color: #119DA4;
+  cursor: pointer;
+  margin: 0.5% 0;
+  padding: 10% 2%;
+  font-size: 1.3rem;
+  transition: background-color 0.5s;
+}
+.cq-mc-container li:hover {
+  background-color: #B10F2E;
+}
+.cq-mc-container li:focus {
+  outline-width: 0;
+  background-color: #B10F2E;
+}
+.cq-question {
+  
+}

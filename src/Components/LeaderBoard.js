@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 export default function LeaderBoard(props) {
   return (
     <div className={props.quizStatus == "done" ? styles['cq-leaderboard-container'] : styles['invisible']}>
-      
+      {props.score}
     </div>
   );
 }
