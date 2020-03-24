@@ -13,53 +13,143 @@ export let questions = {
 
 export let answers = {
   "1" : {
-    "A" : "Je helpt zoveel mogelijk bejaarden met boodschappen doen",
-    "B" : "Quarantaine = life",
-    "C" : "Je maakt direct een einde aan je leven"
+    "A" : {
+      "answer" : "Je helpt zoveel mogelijk bejaarden met boodschappen doen",
+      "score" : 1
+    },
+    "B" : {
+      "answer" : "Quarantaine = life",
+      "score" : 2
+    },
+    "C" : {
+    "answer" : "Je maakt direct een einde aan je leven",
+    "score" : 3
+    }
   },
   "2" : {
-    "A" : "Johan van Oldenbarnevelt",
-    "B" : "Sint Bonifatius",
-    "C" : "Willem de Zwijger"
+    "A" : {
+      "answer" : "Johan van Oldenbarnevelt",
+      "score" : 1
+    },
+    "B" : {
+      "answer" : "Sint Bonifatius",
+      "score" : 1
+    },
+    "C" : {
+      "answer" : "Willem de Zwijger",
+      "score" : 1
+    }
   },
   "3" : {
-    "A" : "Kroegheimwee hebben",
-    "B" : "Mensen die doodgaan",
-    "C" : "Meer moeite moeten doen voor een onenightstand"
+    "A" : {
+      "answer" : "Kroegheimwee hebben",
+      "score" : 1
+    },
+    "B" : {
+      "answer" : "Mensen die doodgaan",
+      "score" : 3
+    },
+    "C" : {
+      "answer" : "Meer moeite moeten doen voor een one night stand",
+      "score" : 2
+    }
   },
   "4" : {
-    "A": "Stoppen met Oeigoeren onderdrukken",
-    "B": "Minder op de grond tuffen",
-    "C": "Lekker met de meiden vega worden"
+    "A": {
+      "answer" : "Stoppen met Oeigoeren onderdrukken",
+      "score" : 2
+    },
+    "B": {
+      "answer" : "Minder kattig gaan doen",
+      "score" : 3
+    },
+    "C" : {
+    "answer" : "Lekker met de meiden vega worden",
+    "score" : 1
+    }
   },
   "5" : {
-    "A" : "Bakken vouwen",
-    "B" : "Snaken",
-    "C": "Masturberen"
+    "A" : {
+      "answer" : "Bakken vouwen",
+      "score" : 1
+    },
+    "B" : {
+      "answer" : "Snaken",
+      "score" : 2
+    },
+    "C" : {
+      "answer" : "Masturberen",
+      "score" : 3
+    }
   },
   "6" : {
-    "A" : "Mark Wahlberg",
-    "B" : "Daniel Craig" ,
-    "C" : "Idris Elba"
+    "A" : {
+      "answer" : "Mark Wahlberg",
+      "score" : 3
+    },
+    "B" : {
+      "answer" : "Daniel Craig" ,
+      "score" : 2
+    },
+    "C" : {
+      "answer" : "Idris Elba",
+      "score" : 1
+    }
   },
   "7" : {
-    "A": "Robert Jensen",
-    "B": "Ronnie Flex",
-    "C": "Ridouan Taghi"
+    "A": {
+      "answer" : "Robert Jensen",
+      "score" : 2
+    },
+    "B": {
+      "answer" : "Robert Jensen",
+      "score" : 3,
+    },
+    "C": {
+      "answer" : "Robert fucking Jensen (WORD WAKKER NEDERLAND)",
+      "score" : 1
+    }
   },
   "8" : {
-    "A": "Goed",
-    "B": "Ziek Goed",
-    "C" : "Wat een Staatsman"
+    "A": {
+      "answer" : "Goed",
+      "score" : 2
+    },
+    "B": {
+      "answer" : "Ziek Goed",
+      "score" : 1
+    },
+    "C" : {
+      "answer" : "Wat een Staatsman",
+      "score" : 3
+    }
   },
   "9" : {
-    "A" : "Influencer (Facking lame ouwe)",
-    "B" : "Digital nomad",
-    "C" : "Whizzkid op de Zuidas"
+    "A" : {
+      "answer" : "Influencer (Facking lame ouwe)",
+      "score" : 3
+    },
+    "B" : {
+      "answer" : "Digital nomad",
+      "score" : 2
+    },
+    "C" : {
+      "answer" : "Whizzkid op de Zuidas",
+      "score" : 1
+    }
   },
   "10": {
-    "A" : "Sure gek, wat denk jij dan",
-    "B" : "Niet helemaal zeker",
-    "C" : "Ik ga waarschijnlijk dood"
+    "A" : {
+      "answer" : "Sure gek, wat denk jij dan",
+      "score" : 3
+    },
+    "B" : {
+      "answer" : "Niet helemaal zeker, de overheid heeft succesvol angst gezaaid onder de bevolking",
+      "score" : 2
+    },
+    "C" : {
+      "answer" : "Ik ga waarschijnlijk dood",
+      "score" : 1
+    }
   }
 };

@@ -17,12 +17,12 @@ export default function SignIn(props) {
         <h1>Welkom bij de Wekelijkse Corona Quiz!</h1>
         <h2>Doe mee om te laten zien dat jij de slimste bent.</h2>
         <h3>Of gewoon omdat je geen flikker te doen hebt.</h3>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Gebruikersnaam..." onChange={handleInputChange}/>
-          <input type="submit" value="corGOna" onClick={startGame}/>
+        <form className={styles['cq-form']} onSubmit={handleSubmit}>
+          <input className={styles['cq-username']} type="text" placeholder="Gebruikersnaam..." onChange={handleInputChange}/>
+          <input className={styles['cq-start-button']} type="submit" value="corGOna" onClick={startGame}/>
         </form>
       </div>
-    {start == true && <Quiz/>}
+    {start == true && <Quiz username={inputs.username}/>}
     </div>
   );
 }
