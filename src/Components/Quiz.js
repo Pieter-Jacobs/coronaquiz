@@ -37,7 +37,7 @@ export default function Quiz(props) {
     <div className={styles['cq-quiz-container']}>
       <LeaderBoard username={props.username} score={currentScore} quizStatus={quizStatus}/>
       <div className={quizStatus === "running" ? styles['cq-quiz-container'] : styles['invisible']}>
-        <h1>Vraag {count}</h1>
+        <h1>Vraag {count}/10</h1>
         <Question isQuestionSelected = {isQuestionSelected} updateScore = {updateScore} count={count}/>
         <div className={visible ? styles['cq-nextbutton'] : styles['invisible']} onClick={() => {handleQuestion(0, addedScore, count)}}>{count < 10 ? <p>Volgende vraag</p> : <p>"Done!"</p>}</div>
       </div>

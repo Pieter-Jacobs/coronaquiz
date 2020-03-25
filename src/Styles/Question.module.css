@@ -1,7 +1,8 @@
 .cq-qa-container {
+  width: 90vw;
 }
 .cq-question-container {
-  height: 12vh;
+  height: 15vh;
 }
 .cq-question {
   font-size: 1.7rem;
@@ -35,4 +36,45 @@
   outline-width: 0;
   background-color: #B10F2E;
   border: 1px solid #FDFFFF;
+}
+
+@media only screen and (min-width: 550px) {
+  .cq-question-container {
+    height: 7vh;
+  }
+}
+@media only screen and (min-width: 768px){
+  .cq-question {
+    font-size: 2rem;
+  }
+  .cq-mc-container li {
+    padding: 9% 2%;
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cq-question-container {
+    height: 5vh;
+  }
+  .cq-mc-container li {
+    padding: 6.5% 2%;
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cq-mc-container li {
+    padding: 5% 2%;
+    margin: 0.1% 0;
+  }
+  .cq-question-container {
+    height: 4vh;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .cq-mc-container li {
+    padding: 4.5% 2%;
+  }
+  .cq-question-container {
+    height: 1vh;
+  }
 }

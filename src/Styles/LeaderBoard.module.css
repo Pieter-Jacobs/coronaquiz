@@ -47,3 +47,15 @@ button {
 .invisible {
   display: none;
 }
+@media only screen and (min-width: 768px) {
+  .cq-socials-facebook {
+    justify-self: end;
+    margin-left: 0;
+    margin-right: 1.25%;
+  }
+  .cq-socials-whatsapp {
+    justify-self: start;
+    margin-right: 0;
+    margin-left: 1.25%;
+  }
+}

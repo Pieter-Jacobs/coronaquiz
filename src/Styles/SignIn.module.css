@@ -12,8 +12,6 @@
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
-.cq-title-container {
-}
 .cq-form {
   width: 50%;
   height: 60%;
@@ -59,4 +57,31 @@
 }
 .invisible {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .cq-form {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cq-home {
+    margin-top: 5%;
+  }
+  .cq-form {
+    height: 70%;
+    margin-top: 0;
+  }
+  .cq-username {
+    font-size: 1.5rem;
+  }
+  .cq-start-button {
+    font-size: 1.5rem;
+    margin-top: 4%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .cq-home h1 {
+    font-size: 2.5rem;
+  }
 }
