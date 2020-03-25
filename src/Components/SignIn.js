@@ -2,13 +2,13 @@ import React, {useState} from 'react';
 import useSignIn from '../CustomHooks.js'
 import Quiz from './Quiz.js';
 import styles from '../Styles/SignIn.module.css'
-import PropTypes from 'prop-types';
 
 
 export default function SignIn(props) {
-  const {inputs, handleInputChange, handleSubmit} = useSignIn();
+  const {inputs, handleInputChange} = useSignIn();
   const [start, setStart] = useState(false);
-  let startGame = () => {
+  let startGame = (event) => {
+    event.preventDefault();
     setStart(true);
   }
   return (
@@ -17,17 +17,12 @@ export default function SignIn(props) {
         <div className={styles['cq-title-container']}>
           <h1>Welkom bij de Wekelijkse Corona Quiz!</h1>
         </div>
-        <form className={styles['cq-form']} onSubmit={handleSubmit}>
+        <form className={styles['cq-form']} onSubmit={startGame}>
           <input className={styles['cq-username']} type="text" name="username" placeholder="Gebruikersnaam..." required="required" onChange={handleInputChange}/>
-          <input className={styles['cq-start-button']} type="submit" value="corGOna" onClick={startGame}/>
+          <input className={styles['cq-start-button']} type="submit" value="corGOna" />
         </form>
-        {console.log(inputs.username)}
       </div>
-    {start == true && <Quiz username={inputs.username}/>}
+    {start === true && <Quiz username={inputs.username}/>}
     </div>
   );
 }
-
-SignIn.propTypes = {
-
-};

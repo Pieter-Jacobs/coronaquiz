@@ -24,7 +24,7 @@ export default function Quiz(props) {
     setCurrentScore(currentScore + addedScore);
   }
   let handleQuestion = (input, score, currentCount) => {
-    if (currentCount <10){
+    if (currentCount < 10){
       passScore(score);
       isQuestionSelected(input);
       nextQuestion();
@@ -36,7 +36,7 @@ export default function Quiz(props) {
   return (
     <div className={styles['cq-quiz-container']}>
       <LeaderBoard username={props.username} score={currentScore} quizStatus={quizStatus}/>
-      <div className={quizStatus == "running" ? styles['cq-quiz-container'] : styles['invisible']}>
+      <div className={quizStatus === "running" ? styles['cq-quiz-container'] : styles['invisible']}>
         <h1>Vraag {count}</h1>
         <Question isQuestionSelected = {isQuestionSelected} updateScore = {updateScore} count={count}/>
         <div className={visible ? styles['cq-nextbutton'] : styles['invisible']} onClick={() => {handleQuestion(0, addedScore, count)}}>{count < 10 ? <p>Volgende vraag</p> : <p>"Done!"</p>}</div>
@@ -46,5 +46,5 @@ export default function Quiz(props) {
 }
 
 Quiz.propTypes = {
-
+  username: PropTypes.string.isRequired
 };

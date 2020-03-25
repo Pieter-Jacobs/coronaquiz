@@ -31,6 +31,9 @@
   text-align: center;
   font-size: 1.4rem;
 }
+.cq-username:focus {
+  outline-width: 0;
+}
 .cq-username::placeholder {
   color: #FDFFFF;
 }

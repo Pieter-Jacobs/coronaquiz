@@ -1,13 +1,15 @@
 .cq-leaderboard-container {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 3fr 4fr;
   height: 100%;
   align-items: center;
 }
-.invisible {
-  display: none;
+.cq-leaderboard-container h1 {
+  align-self: end;
 }
 .cq-socials {
+  width: 90%;
+  margin: auto;
   display: grid;
   grid-template-areas: "title title"
                        "facebook whatsapp";
@@ -38,8 +40,10 @@
   background-position: center;
   margin-left: 2.5%;
 }
-
 button {
   height: 100%;
   width: 100%;
+}
+.invisible {
+  display: none;
 }

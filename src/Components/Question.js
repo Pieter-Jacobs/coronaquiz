@@ -7,14 +7,16 @@ import PropTypes from 'prop-types';
 export default function Question(props) {
   const [answer, setAnswer] = useState();
   const selectAnswer = (event) => {
-    let answer = event.currentTarget.className;
-    setAnswer(answer);
-    props.updateScore(answers[props.count][answer].score);
+    let choice = event.currentTarget.className
+    setAnswer(choice);
+    props.updateScore(answers[props.count][choice].score);
     props.isQuestionSelected(1);
   }
   return (
     <div className={styles['cq-qa-container']}>
-      <h1 className={styles['cq-question']}>{questions[props.count]}</h1>
+      <div className={styles['cq-question-container']}>
+        <h1 className={styles['cq-question']}>{questions[props.count]}</h1>
+      </div>
       <ul className={styles['cq-mc-container']}>
         <li className="A" tabIndex="1" onClick={selectAnswer}><strong>A</strong> {answers[props.count].A.answer}</li>
         <li className="B" tabIndex="2" onClick={selectAnswer}><strong>B</strong> {answers[props.count].B.answer}</li>
@@ -25,5 +27,5 @@ export default function Question(props) {
 }
 
 Question.propTypes = {
-
+  count: PropTypes.number.isRequired
 };

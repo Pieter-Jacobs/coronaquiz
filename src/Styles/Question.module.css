@@ -1,5 +1,11 @@
 .cq-qa-container {
 }
+.cq-question-container {
+  height: 12vh;
+}
+.cq-question {
+  font-size: 1.7rem;
+}
 .cq-mc-container {
   display: grid;
   grid-auto-rows: repeat(3,1fr);
@@ -29,7 +35,4 @@
   outline-width: 0;
   background-color: #B10F2E;
   border: 1px solid #FDFFFF;
-}
-.cq-question {
-  font-size: 1.5rem;
 }
