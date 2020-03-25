@@ -16,17 +16,20 @@
 }
 .cq-form {
   width: 50%;
-  height: 50%;
+  height: 60%;
   justify-self: center;
   display: grid;
   justify-items: center;
+  margin-top: 5%;
 }
 .cq-username {
   width: 90%;
   background-color: #119DA4;
   color: #FDFFFF;
   border: none;
+  border-radius: 5px;
   text-align: center;
+  font-size: 1.4rem;
 }
 .cq-username::placeholder {
   color: #FDFFFF;
@@ -34,19 +37,22 @@
 .cq-start-button {
   width: 90%;
   height: 80%;
-  margin-top: 5%;
+  margin-top: 7%;
   background-color: #B10F2E;
   color: #FDFFFF;
   cursor: pointer;
   border: none;
+  border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: width 0.8s, height 0.8s, border-radius 0.8s;
+  transition: width 0.8s, height 0.8s;
+  -webkit-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 38px 0px rgba(0,0,0,0.75);
 }
 .cq-start-button:hover {
   width: 95%;
   height: 85%;
-  border-radius: 5px;
 }
 .invisible {
   display: none;

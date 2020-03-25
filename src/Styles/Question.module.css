@@ -1,4 +1,6 @@
-.cq-mc-container{
+.cq-qa-container {
+}
+.cq-mc-container {
   display: grid;
   grid-auto-rows: repeat(3,1fr);
   text-align: left;
@@ -11,7 +13,7 @@
 
 .cq-mc-container li {
   display: grid;
-  grid-template-columns: 5% 95%;
+  grid-template-columns: 8% 92%;
   border-radius: 5px;
   background-color: #119DA4;
   cursor: pointer;
@@ -26,7 +28,8 @@
 .cq-mc-container li:focus {
   outline-width: 0;
   background-color: #B10F2E;
+  border: 1px solid #FDFFFF;
 }
 .cq-question {
-  
+  font-size: 1.5rem;
 }

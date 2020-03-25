@@ -1,3 +1,45 @@
+.cq-leaderboard-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+}
 .invisible {
   display: none;
+}
+.cq-socials {
+  display: grid;
+  grid-template-areas: "title title"
+                       "facebook whatsapp";
+  justify-items: center;
+  grid-row-gap: 5%;
+}
+.cq-share {
+  grid-area: title;
+}
+.cq-socials-whatsapp {
+  grid-area: whatsapp;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-size: 100px;
+  background-image: url('/whatsapp2.png');
+  background-position: center;
+  margin-right: 2.5%;
+}
+
+.cq-socials-facebook{
+  grid-area: facebook;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-image: url('/facebook.png');
+  background-size: 100px;
+  background-position: center;
+  margin-left: 2.5%;
+}
+
+button {
+  height: 100%;
+  width: 100%;
 }

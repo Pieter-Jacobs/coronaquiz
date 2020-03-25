@@ -19,15 +19,15 @@
   border-radius: 5px;
   font-size: 1.2rem;
   font-weight: bold;
-  transition: width 0.8s, height 0.8s
+  transition: width 0.5s, height 0.5s
 }
 .cq-nextbutton p {
   align-self: center;
   margin: 0;
 }
 .cq-nextbutton:hover {
-  width: 140px;
-  height: 55px;
+  width: 135px;
+  height: 50px;
 }
 .invisible {
   display: none;

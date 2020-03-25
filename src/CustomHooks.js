@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 export default function useSignIn() {
-  const [inputs, setInputs] = useState({"username" : "Gebruikersnaam..."});
+  const [inputs, setInputs] = useState({"username" : ""});
 
   const handleSubmit = (event) => {
     if (event) {
