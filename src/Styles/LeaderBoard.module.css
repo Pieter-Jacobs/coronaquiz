@@ -17,17 +17,17 @@ a {
   margin: auto;
   color: #FDFFFF;
   cursor: pointer;
-  border: solid 4px #B10F2E;
+  background-color:  #B10F2E;
   border-radius: 5px;
   font-size: 1.4rem;
   font-weight: bold;
   padding: 3px;
   display: grid;
   align-items: center;
-  transition: background-color 1s;
+  transition: border 1s;
 }
 .cq-restart-button:hover {
-  background-color:  #B10F2E;
+  border: solid 4px #FDFFFF;
 }
 .cq-restart-button p {
   padding: 0;

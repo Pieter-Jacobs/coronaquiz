@@ -7,7 +7,7 @@ export let questions = {
   "6" : "Welke Britse superster is nog niet besmet geraakt?",
   "7" : "Stel dat jij het coronavirus zou zijn. Welke BN'er zou jij als eerst besmetten?",
   "8" : "Wie is jouw grootste houvast tijdens de Coronacrisis?",
-  "9" : "Als het coronavirus de wereld gaat resetten door een apocalypse, wat zou jij dan naderhand willen worden?",
+  "9" : "Wat zou jij na een corona apocalypse willen worden?",
   "10" : "Ga jij het coronavirus overleven?"
 };
 
@@ -22,8 +22,8 @@ export let answers = {
       "score" : 2
     },
     "C" : {
-    "answer" : "Je maakt direct een einde aan je leven",
-    "score" : 3
+      "answer" : "Je maakt direct een einde aan je leven",
+      "score" : 3
     }
   },
   "2" : {
@@ -85,11 +85,11 @@ export let answers = {
   "6" : {
     "A" : {
       "answer" : "Idris Elba",
-      "score" : 0
+      "score" : 1
     },
     "B" : {
       "answer" : "Prins Charles" ,
-      "score" : 0
+      "score" : 1
     },
     "C" : {
       "answer" : "Cara Delevingne",

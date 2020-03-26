@@ -6,40 +6,26 @@ import PropTypes from 'prop-types';
 
 
 export default function Quiz(props) {
-  const [count,setCount] = useState(1)
-  const [currentScore, setCurrentScore] = useState(0);
-  const [addedScore, setAddedScore] = useState(0);
-  const [visible,setVisibility] = useState(0);
+  const [count,setCount] = useState(1);
+  const [score, setScore] = useState(0);
   const [quizStatus, setQuizStatus] = useState("running");
+  let passScore = (newScore) => {
+    setScore(score + newScore);
+  }
   let nextQuestion = () => {
-    setCount(count+1);
-  }
-  let isQuestionSelected = (input) => {
-    setVisibility(input);
-  }
-  let updateScore = (score) => {
-    setAddedScore(score);
-  }
-  let passScore = (score) => {
-    setCurrentScore(currentScore + addedScore);
-  }
-  let handleQuestion = (input, score, currentCount) => {
-    if (currentCount < 10){
-      passScore(score);
-      isQuestionSelected(input);
-      nextQuestion();
+    if(count === 10) {
+      setQuizStatus("done");
     }
     else {
-      setQuizStatus("done");
+      setCount(count+1);
     }
   }
   return (
     <div className={styles['cq-quiz-container']}>
-      <LeaderBoard username={props.username} score={currentScore} quizStatus={quizStatus}/>
+      <LeaderBoard username={props.username} score={score} quizStatus={quizStatus}/>
       <div className={quizStatus === "running" ? styles['cq-quiz-container'] : styles['invisible']}>
         <h1>Vraag {count}/10</h1>
-        <Question isQuestionSelected = {isQuestionSelected} updateScore = {updateScore} count={count}/>
-        <div className={visible ? styles['cq-nextbutton'] : styles['invisible']} onClick={() => {handleQuestion(0, addedScore, count)}}>{count < 10 ? <p>Volgende vraag</p> : <p>Done!</p>}</div>
+        <Question nextQuestion = {nextQuestion} count={count} passScore={passScore}/>
       </div>
     </div>
   );
