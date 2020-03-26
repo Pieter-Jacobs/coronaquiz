@@ -36,8 +36,8 @@ export default function LeaderBoard(props) {
   }
   return (
     <div className={props.quizStatus === "done" ? styles['cq-leaderboard-container'] : styles['invisible']}>
-      <h1 className={styles['cq-score-expression']}>{props.username},<br/>Jij hebt een score van {props.score}.<br/>{determineExpression(props.score)}</h1>
-      <a href="decoronaquiz.com"><div className={styles['cq-restart-button']}><p>Speel Opnieuw!</p></div></a>
+      <h1 className={styles['cq-score-expression']}>{props.username},<br/>Jij hebt {props.score} van de 28 punten gescoord.<br/>{determineExpression(props.score)}</h1>
+      <a href="https://www.decoronaquiz.com"><div className={styles['cq-restart-button']}><p>Speel Opnieuw!</p></div></a>
       <div className={styles['cq-socials']}>
         <h2 className={styles['cq-share']}>Deel je score op social media!</h2>
         <div className={styles['cq-socials-whatsapp']}>

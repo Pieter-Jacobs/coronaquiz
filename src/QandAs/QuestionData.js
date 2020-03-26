@@ -1,12 +1,12 @@
 export let questions = {
   "1" : "Als je besmet raakt met het virus, wat doe je dan?",
-  "2" : "Mensen die wc rollen hebben gehamsterd moeten op dezelfde wijze worden terechtgesteld als:",
+  "2" : "Hamsteraars verdienen dezelfde doodstraf als:",
   "3" : "Wat is de meest vervelende bijwerking van het coronavirus?",
   "4" : "Wat had China kunnen doen om het virus te voorkomen?",
   "5" : "Hoe dood je de quarantinetijd het beste?",
-  "6" : "Welke eindbaas is reeds besmet met COVID-19?",
-  "7" : "Stel je voor dat jij het coronavirus zou zijn. Welke BN'er wiens naam begint met een 'R' zou jij als eerst besmetten?",
-  "8" : "Hoe doet minister president Rutte het nu?",
+  "6" : "Welke Britse superster is nog niet besmet geraakt?",
+  "7" : "Stel dat jij het coronavirus zou zijn. Welke BN'er zou jij als eerst besmetten?",
+  "8" : "Wie is jouw grootste houvast tijdens de Coronacrisis?",
   "9" : "Als het coronavirus de wereld gaat resetten door een apocalypse, wat zou jij dan naderhand willen worden?",
   "10" : "Ga jij het coronavirus overleven?"
 };
@@ -50,7 +50,7 @@ export let answers = {
       "score" : 3
     },
     "C" : {
-      "answer" : "Meer moeite moeten doen voor een one night stand",
+      "answer" : "Meer moeite moeten doen voor een onenightstand",
       "score" : 2
     }
   },
@@ -60,11 +60,11 @@ export let answers = {
       "score" : 2
     },
     "B": {
-      "answer" : "Minder kattig gaan doen",
+      "answer" : "Stoppen met het eten van huisdieren",
       "score" : 3
     },
     "C" : {
-    "answer" : "Lekker met de meiden vega worden",
+    "answer" : "Stoppen met TikTok",
     "score" : 1
     }
   },
@@ -84,21 +84,21 @@ export let answers = {
   },
   "6" : {
     "A" : {
-      "answer" : "Mark Wahlberg",
-      "score" : 3
+      "answer" : "Idris Elba",
+      "score" : 0
     },
     "B" : {
-      "answer" : "Daniel Craig" ,
-      "score" : 2
+      "answer" : "Prins Charles" ,
+      "score" : 0
     },
     "C" : {
-      "answer" : "Idris Elba",
-      "score" : 1
+      "answer" : "Cara Delevingne",
+      "score" : 3
     }
   },
   "7" : {
     "A": {
-      "answer" : "Robert Jensen",
+      "answer" : "Ronnie Flex",
       "score" : 2
     },
     "B": {
@@ -106,27 +106,27 @@ export let answers = {
       "score" : 3,
     },
     "C": {
-      "answer" : "Robert fucking Jensen (WORD WAKKER NEDERLAND)",
+      "answer" : "Ridouan Taghi",
       "score" : 1
     }
   },
   "8" : {
     "A": {
-      "answer" : "Goed",
+      "answer" : "Mark Rutte",
       "score" : 2
     },
     "B": {
-      "answer" : "Ziek Goed",
+      "answer" : "Willem Alexander",
       "score" : 1
     },
     "C" : {
-      "answer" : "Wat een Staatsman",
+      "answer" : "Jaap van Dissel (RIVM)",
       "score" : 3
     }
   },
   "9" : {
     "A" : {
-      "answer" : "Influencer (Facking lame ouwe)",
+      "answer" : "Influencer",
       "score" : 3
     },
     "B" : {
@@ -140,11 +140,11 @@ export let answers = {
   },
   "10": {
     "A" : {
-      "answer" : "Sure gek, wat denk jij dan",
+      "answer" : "Natuurlijk ouwe!",
       "score" : 3
     },
     "B" : {
-      "answer" : "Niet helemaal zeker, de overheid heeft succesvol angst gezaaid onder de bevolking",
+      "answer" : "Het coronavirus is een hoax",
       "score" : 2
     },
     "C" : {

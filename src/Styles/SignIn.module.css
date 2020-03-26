@@ -62,6 +62,7 @@
 @media only screen and (min-width: 768px) {
   .cq-form {
     width: 30%;
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -70,7 +71,6 @@
   }
   .cq-form {
     height: 70%;
-    margin-top: 0;
   }
   .cq-username {
     font-size: 1.5rem;

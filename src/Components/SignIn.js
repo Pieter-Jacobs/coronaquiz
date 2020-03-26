@@ -14,7 +14,7 @@ export default function SignIn(props) {
   return (
     <div className={styles['cq-main-container']}>
       <div className={start ? styles['invisible'] : styles['cq-home']}>
-        <h1>Welkom bij de Wekelijkse Corona Quiz!</h1>
+        <h1>Welkom bij de Corona Quiz!</h1>
         <form className={styles['cq-form']} onSubmit={startGame}>
           <input className={styles['cq-username']} type="text" name="username" placeholder="Gebruikersnaam..." required="required" onChange={handleInputChange}/>
           <input className={styles['cq-start-button']} type="submit" value="corGOna" />

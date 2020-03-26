@@ -30,11 +30,13 @@
   transition: background-color 0.5s;
 }
 .cq-mc-container li:hover {
-  background-color: #B10F2E;
+  background-color: #49C6E5;
+  color: #000;
 }
 .cq-mc-container li:focus {
   outline-width: 0;
-  background-color: #B10F2E;
+  color: #000;
+  background-color: #49C6E5;
   border: 1px solid #FDFFFF;
 }
 
