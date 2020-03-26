@@ -84,4 +84,7 @@
   .cq-home h1 {
     font-size: 2.5rem;
   }
+  .cq-form {
+  	width: 20%;
+  }
 }

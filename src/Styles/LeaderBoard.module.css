@@ -1,11 +1,37 @@
+a {
+  align-self: end;
+  text-decoration: none;
+}
 .cq-leaderboard-container {
   display: grid;
-  grid-template-rows: 3fr 4fr;
+  grid-template-rows: 4fr 1.5fr 4fr;
   height: 100%;
   align-items: center;
 }
 .cq-leaderboard-container h1 {
   align-self: end;
+}
+.cq-restart-button{
+  width: 150px;
+  height: 55px;
+  margin: auto;
+  color: #FDFFFF;
+  cursor: pointer;
+  border: solid 4px #B10F2E;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 3px;
+  display: grid;
+  align-items: center;
+  transition: background-color 1s;
+}
+.cq-restart-button:hover {
+  background-color:  #B10F2E;
+}
+.cq-restart-button p {
+  padding: 0;
+  margin: 0;
 }
 .cq-socials {
   width: 90%;
