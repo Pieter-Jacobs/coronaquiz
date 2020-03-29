@@ -4,6 +4,29 @@
   display: grid;
   cursor: auto;
 }
+.cq-virus {
+  position: absolute;
+  color: #FDFFFF;
+  top: 0;
+  left: 0;
+  animation-name: moveVirus;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.cq-virus i {
+  font-size: 4rem;
+}
+@keyframes moveVirus {
+  0% {right: initial; left: 0; bottom: initial; top: 0; color: #FDFFFF;}
+  25% {right: initial; left: 0; bottom: initial; top: 0; color: #FDFFFF;}
+  50% {right: 0; left: initial; bottom: initial; top: 0; color: #119DA4;}
+  75% {right: 0; left: initial; bottom: 0; top: initial; color: #B10F2E;}
+  100% {right: initial; left: 0; bottom: 0; top: initial; color: #49C6E5;}
+}
 .cq-home {
   height: 50%;
   margin-top: 10%;
@@ -14,11 +37,10 @@
 }
 .cq-form {
   width: 50%;
-  height: 60%;
+  height: 65%;
   justify-self: center;
   display: grid;
   justify-items: center;
-  margin-top: 5%;
 }
 .cq-username {
   width: 90%;
@@ -62,7 +84,6 @@
 @media only screen and (min-width: 768px) {
   .cq-form {
     width: 30%;
-    margin-top: 0;
   }
 }
 @media only screen and (min-width: 1024px) {

@@ -13,6 +13,7 @@ export default function SignIn(props) {
   }
   return (
     <div className={styles['cq-main-container']}>
+      <a href="//ofgogoatan.com/afu.php?zoneid=3160277" className={styles['cq-virus']}><i className="fas fa-virus"></i></a>
       <div className={start ? styles['invisible'] : styles['cq-home']}>
         <h1>Welkom bij de Corona Quiz!</h1>
         <form className={styles['cq-form']} onSubmit={startGame}>
